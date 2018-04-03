@@ -21,3 +21,8 @@ WARN  07:57:07,397 Interpreter - ![0,15]: 'InbreedingCoeff != 'NaN' && Inbreedin
 WARN  08:13:26,232 IndexDictionaryUtils - Track GNOMAD_2.0.1_Genome_chr1 doesn't have a sequence dictionary built in, skipping dictionary validation 
 18/03/28 09:04:52 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
 
+
+SomaticAmplicon script 1
+------------------------
+WARN  11:33:18,031 Interpreter - ![0,6]: 'LCRLen > 8;' undefined variable LCRLen 
+
