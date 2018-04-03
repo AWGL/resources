@@ -1,0 +1,23 @@
+GermlineEnrichment script 1
+---------------------------
+ERROR StatusLogger Unable to create class org.apache.logging.log4j.core.impl.Log4jContextFactory specified in jar:file:/share/apps/GATK-distros/GATK_3.8.0/GenomeAnalysisTK.jar!/META-INF/log4j-provider.properties
+ERROR StatusLogger Log4j2 could not find a logging implementation. Please add log4j-core to the classpath. Using SimpleLogger to log to the console...
+WARN  14:04:03,955 HaplotypeScore - Annotation will not be calculated, must be called from UnifiedGenotyper, not HaplotypeCaller 
+WARN  14:04:46,829 AnnotationUtils - Annotation will not be calculated, genotype is not called 
+WARN  14:06:11,230 HaplotypeCallerGenotypingEngine - location 1:120612040-120612049: too many alternative alleles found (7) larger than the maximum requested with -maxAltAlleles (6), the following will be dropped: T.
+WARN  14:04:03,183 InbreedingCoeff - Annotation will not be calculated. InbreedingCoeff requires at least 10 unrelated samples. WARN  14:04:03,183 InbreedingCoeff - Annotation will not be calculated. InbreedingCoeff requires at least 10 unrelated samples. 
+WARN  09:16:36,490 SimpleTimer - Clock drift of -1,456,230,905,266,224,451 - -1,456,230,882,139,478,967 = 23,126,745,484 nanoseconds detected, vs. max allowable drift of 5,000,000,000. Assuming checkpoint/restart event. 
+
+
+
+GermlineEnrichment script 2
+---------------------------
+WARN  07:28:29,408 StrandBiasTest - StrandBiasBySample annotation exists in input VCF header. Attempting to use StrandBiasBySample values to calculate strand bias annotation values. If no sample has the SB genotype annotation, annotation may still fail. 
+WARN  07:28:29,641 HaplotypeScore - Annotation will not be calculated, must be called from UnifiedGenotyper, not GenotypeGVCFs 
+WARN  07:28:37,253 ExactAFCalculator - This tool is currently set to genotype at most 6 alternate alleles in a given context, but the context at 1: 8022800 has 9 alternate alleles so only the top alleles will be used; see the --max_alternate_alleles argument. Unless the DEBUG logging level is used, this warning message is output just once per run and further warnings are suppressed. 
+WARN  07:56:33,643 Interpreter - ![0,9]: 'MQRankSum < -12.5;' undefined variable MQRankSum 
+WARN  07:56:33,643 Interpreter - ![0,14]: 'ReadPosRankSum < -8.0;' undefined variable ReadPosRankSum 
+WARN  07:57:07,397 Interpreter - ![0,15]: 'InbreedingCoeff != 'NaN' && InbreedingCoeff < -0.8;' undefined variable InbreedingCoeff 
+WARN  08:13:26,232 IndexDictionaryUtils - Track GNOMAD_2.0.1_Genome_chr1 doesn't have a sequence dictionary built in, skipping dictionary validation 
+18/03/28 09:04:52 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+
